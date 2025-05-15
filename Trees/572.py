@@ -26,7 +26,7 @@ class Solution:
             # subtrees
             else:
                 return ',' + str(node.val) + ser(node.left) + ser(node.right)
-        # The second tree is a subtree of the first if the preorder traveral of
+        # The second tree is a subtree of the first if the preorder traversal of
         # the second tree is entirely part of the first with no gaps.
         return ser(subRoot) in ser(root)
             
